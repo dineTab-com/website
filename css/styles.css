@@ -41,7 +41,9 @@ a {}
     color: var(--primary);
     margin-bottom: 20px
 }
-
+.text-blue {
+    color: var(--primary) !important;
+}
 .text-pink {
     color: var(--secondary) !important;
 }
@@ -70,6 +72,11 @@ ul.navbar-nav > li.nav-item {
     padding-right: 20px;
 }
 
+.btn-lg{
+    padding-left:30px;
+    padding-right:30px;
+}
+
 .btn-primary {
     color: white;
     background-color: var(--primary);
@@ -96,6 +103,11 @@ section.dt {
     padding-bottom: 120px;
 }
 
+section.hero {
+    background-color: white;
+    color: black;
+}
+
 section.light {
     background-color: white;
     color: black;
@@ -110,11 +122,24 @@ section.dark p {
     color: rgba(255, 255, 255, 0.69);
 }
 
+section.dark a{
+    color:white;
+}
+
+section.blue{
+    background-color: var(--primary);
+    color:white;
+}
+
+.logomark-footer{
+    width:40px;
+}
+
 
 #bm1 {
-    width: 320px;
+    width: 300px;
     height: 100%;
-    border-radius: 69px;
+    border-radius: 50px;
     overflow: hidden;
     border: 12px solid white;
     box-shadow: var(--smooth-shadow);
@@ -124,7 +149,7 @@ section.dark p {
 }
 
 #bm1 > svg {
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 .features-grid {
@@ -133,7 +158,7 @@ section.dark p {
     grid-gap: 50px;
 }
 
-.feature {
+.feature-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,6 +169,50 @@ section.dark p {
     width: 200px;
     margin-bottom: 40px;
 }
+
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: stretch;
+}
+
+.benefit-img-holder {
+    background-color: white;
+    box-shadow: 0px 10px 20px #00000029;
+    border-radius: 25px;
+    padding: 12px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.benefit-img {
+    width: 69px;
+    height: 69px;
+}
+
+.badge-download{
+    height:50px;
+    margin:15px;
+}
+
+footer{
+    padding-top:80px;
+    padding-bottom:40px;
+    background-color:black;
+}
+
 
 @media (max-width:767px) {
     h1 {
@@ -158,27 +227,31 @@ section.dark p {
         font-size: 20px;
     }
 
+    ul.navbar-nav > li.nav-item {
+        margin-left: 0
+    }
+
     section.dt {
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
-    section.light {
+    section.hero {
         background-color: black;
         padding-bottom: 0;
         text-align: center;
         color: rgba(255, 255, 255, .5);
     }
 
-    section.light h1 {
+    section.hero h1 {
         color: white;
     }
 
-    section.light p.lead {
+    section.hero p.lead {
         font-weight: 100 !important;
     }
 
-    section.light .supertitle {
+    section.hero .supertitle {
         color: var(--secondary);
     }
 
@@ -186,5 +259,19 @@ section.dark p {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 50px;
+    }
+
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+    .benefit-img-holder {
+        width:86px;
+        height:86px;
+    }
+    .benefit-img{
+        width:60px;
+        height:60px;
     }
 }
