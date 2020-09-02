@@ -107,6 +107,7 @@ ul.navbar-nav > li.nav-item {
 section.dt {
     padding-top: 120px;
     padding-bottom: 120px;
+    overflow: hidden;
 }
 
 section.hero {
