@@ -1,5 +1,5 @@
 :root {
-    --primary: #0000ff;
+    --primary: rgb(0, 0, 255);
     --secondary: #ff00ff;
     --smooth-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
         0 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -41,15 +41,21 @@ a {}
     color: var(--primary);
     margin-bottom: 20px
 }
+
 .text-blue {
     color: var(--primary) !important;
 }
+
 .text-pink {
     color: var(--secondary) !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .5);
+}
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+    color: white;
 }
 
 .logo {
@@ -72,9 +78,9 @@ ul.navbar-nav > li.nav-item {
     padding-right: 20px;
 }
 
-.btn-lg{
-    padding-left:30px;
-    padding-right:30px;
+.btn-lg {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .btn-primary {
@@ -106,11 +112,16 @@ section.dt {
 section.hero {
     background-color: white;
     color: black;
-    padding-top:60px;
+    padding-top: 60px;
 }
 
 section.light {
     background-color: white;
+    color: black;
+}
+
+section.light-grey {
+    background-color: #F7F7F7;
     color: black;
 }
 
@@ -123,17 +134,17 @@ section.dark p {
     color: rgba(255, 255, 255, 0.69);
 }
 
-section.dark a{
-    color:white;
+section.dark a {
+    color: white;
 }
 
-section.blue{
+section.blue {
     background-color: var(--primary);
-    color:white;
+    color: white;
 }
 
-.logomark-footer{
-    width:40px;
+.logomark-footer {
+    width: 40px;
 }
 
 
@@ -203,15 +214,15 @@ section.blue{
     height: 69px;
 }
 
-.badge-download{
-    height:50px;
-    margin:15px;
+.badge-download {
+    height: 50px;
+    margin: 15px;
 }
 
-footer{
-    padding-top:80px;
-    padding-bottom:40px;
-    background-color:black;
+footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: black;
 }
 
 
@@ -267,12 +278,38 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 50px;
     }
+
     .benefit-img-holder {
-        width:86px;
-        height:86px;
+        width: 86px;
+        height: 86px;
     }
-    .benefit-img{
-        width:60px;
-        height:60px;
+
+    .benefit-img {
+        width: 60px;
+        height: 60px;
     }
+}
+
+.team-avatar {
+    box-shadow: var(--smooth-shadow);
+    max-width: 169px;
+    margin-bottom: 40px
+}
+
+label {
+    margin-bottom: .25rem;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-control {
+    border: 2px solid black;
+}
+
+.form-control:focus {
+    color: black;
+    background-color: #fff;
+    border-color: var(--primary);
+    outline: 0;
+    box-shadow: 0 0 0 1px rgb(0, 0, 255, .2);
 }
