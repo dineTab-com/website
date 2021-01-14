@@ -29,7 +29,8 @@ h3 {
 }
 
 p.lead {
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 20px
 }
 
 a {}
@@ -313,4 +314,48 @@ label {
     border-color: var(--primary);
     outline: 0;
     box-shadow: 0 0 0 1px rgb(0, 0, 255, .2);
+}
+
+/* jan 14 css */
+.benefit-img-holder-large {
+    background-color: white;
+    box-shadow: 0px 10px 20px #00000029;
+    border-radius: 25px;
+    padding: 32px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.alert-primary {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+}
+
+.section-border-rounded {
+    border: 24px solid white;
+    border-radius: 60px;
+}
+
+
+.tile-outline-white {
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 32px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width:767px) {
+
+    .section-border-rounded {
+        border: 12px solid white;
+        border-radius: 40px;
+    }
+
+    .tile-outline-white {
+        padding: 12px;
+    }
 }
