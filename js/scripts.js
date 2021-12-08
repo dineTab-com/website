@@ -28,3 +28,7 @@ var animation5 = bodymovin.loadAnimation({
     autoplay: true,
     path: 'https://dinetab.com/js/mobile.json'
 })
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("thisYear").innerHTML = year;
