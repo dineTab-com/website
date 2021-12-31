@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177296082-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-177296082-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177296082-1');
     </script>
 
     <!-- Required meta tags -->
@@ -16,10 +20,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/e72ad5af56.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+        integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./img/favicon.png" />
 
@@ -41,77 +46,175 @@
     <meta property="twitter:title" content="NFT Loyalty Platform for Restaurants" />
     <meta property="twitter:description" content="NFT Loyalty Platform for Restaurants. Coming soon" />
     <meta property="twitter:image" content="https://dinetab.com/img/og-image.jpg" />
-    <style>
-        .animated-logo{
-            margin-bottom: -35px;
-            margin-right:-20px;
-        }
-        @media (max-width:767px) {
-            .animated-logo{
-            margin-bottom: -10px;
-            margin-right: 0;
-        }
-    }
-
-    </style>
 </head>
 
-<body style="background-color: #000;">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="./"><img src="./img/2022/logo-navbar.png" alt="dineTab Homepage"
+                    style="width:120px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-regular fa-circle-chevron-down text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-md-3">
+                        <a class="nav-link text-white" href="https://discord.gg/DQ7qEYhK2P" target="_blank"><i
+                                class="fa-brands fa-discord me-2 text-pink"></i>Discord</a>
+                    </li>
+                    <li class="nav-item ms-md-3">
+                        <a class="nav-link text-white" href="https://forms.gle/Riy2928gWGG3qe8t8" target="_blank">✨
+                            dineTab Edition NFTs</a>
+                    </li>
+                    <li class="nav-item ms-md-3">
+                        <a class="nav-link text-white" href="https://forms.gle/7p4eYAsau7jhVbEV6" target="_blank">👾
+                            Restaurant Beta</a>
+                    </li>
+
+
+                    <li class="nav-item ms-md-3">
+                        <a class="nav-link text-white" href="mailto:contact@dinetab.com">💌 Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
-        <section class="py-2 dark d-flex align-items-center" style="height: 100vh;">
-            <div class="container text-center pt-5 pt-md-0">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-md-5 order-1 order-md-0">
-                        <img class="mt-3" src="./img/2021/user-phone.png" alt="" style="width: 100%; max-width: 420px" data-aos="fade-in" data-aos-duration="1000" />
+        <section class="py-5">
+            <div class="container text-center text-md-start">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-md-4 order-1 order-md-0">
+                        <img class="mt-3" src="./img/2022/user-phone.png" alt="" style="width: 100%; max-width: 420px"
+                            data-aos="fade-up" data-aos-duration="2000" />
                     </div>
-                    <div class="col-md-7 order-0 order-md-1">
-                        <h1><span class="sr-only">NFT Loyalty Platform for Restaurants</span>
-                            <!-- <img src="./img/logo-dinetab-on-dark.svg" alt="" style="max-width:300px" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250" > -->
+                    <div class="col-md-6 order-0 order-md-1">
+                        <span class="logo-h1">
+                            <h1 class="visually-hidden">NFT Loyalty Platform for Restaurants</h1>
                             <video class="animated-logo" width="110" height="110" autoplay loop muted playsinline>
                                 <source src="./video/animated-logo.mp4" type="video/mp4" />
                                 <source src="./video/animated-logo.ogg" type="video/ogg" />
                                 Your browser does not support the video tag.
-                              </video>
-                              <span class="d-block d-md-inline-block text-white">din<span style="letter-spacing: -7px;">eT</span>ab</span>
-                        </h1>
-                        <p class="lead text-white my-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" >
+                            </video>
+                            <span class="d-block d-md-inline-block text-white">din<span
+                                    style="letter-spacing: -7px;">eT</span>ab</span>
+                        </span>
+                        <p class="lead text-white mt-2 mb-4" data-aos="fade-in" data-aos-duration="2000">
                             <span class="d-inline d-md-block">NFT Loyalty Platform for Restaurants
-                        </p>      
-                        <div class="d-block mb-3">
-                            <a href="https://forms.gle/7p4eYAsau7jhVbEV6" class="btn btn-lg  btn-primary">👉 Sign up to Beta</a>  
+                        </p>
+                        <div class="d-block mb-3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+                            <a href="https://discord.gg/DQ7qEYhK2P" target="_blank"
+                                class="btn btn-lg btn-primary rounded-pill"><i
+                                    class="fa-brands fa-discord me-2"></i>Join our Discord</a>
 
-                        </div>               
-                        <a href="mailto:contact@dinetab.com" class="">✉️ Contact us</a>                          
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="py-5">
+            <div class="container">
+                <div class="d-block bg-blue rounded-24 p-4 text-white mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-md-5 order-md-1">
+                            <img src="./img/2022/server-girl.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-5 order-md-0">
+                            <h2 class="mb-3">Retention</h2>
+                            <ul>
+                                <li>Create your own community with dineTab. </li>
+                                <li>Attract, retain and reward your customers with NFTs.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-block bg-white rounded-24 p-4 text-black" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-md-5">
+                            <img src="./img/2022/people-art.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-5">
+                            <h2 class="mb-3">Rewards</h2>
+                            <ul>
+                                <li>Create and sell your own NFTs with dineTab. </li>
+                                <li>Increase your sales by rewarding customers for loyalty with NFTs. </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <img src="./img/2022/nft-images.png" class="img-fluid mb-5" alt="" style="max-width:250px;"
+                            data-aos="zoom-in" data-aos-duration="1000">
+                        <h2 class="mb-3">dineTab Edition NFTs</h2>
+                        <p>Join our community and benefit with restaurant perks and more!<br>
+                            Earn your free dineTab Edition NFT.</p>
+                        <div class="d-block" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://forms.gle/Riy2928gWGG3qe8t8" target="_blank"
+                                class="btn btn-lg  btn-outline-light rounded-pill">💙 Receive one now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container text-center">
+                <div class="border border-2 border-white rounded-24" data-aos="fade-in" data-aos-duration="2500">
+                    <div class="p-4 p-md-5">
+                        <h2 class="mb-3">Restaurant Beta Open</h2>
+                        <p>Sign up for free beta program.</p>
+                        <div class="d-block mt-4 mb-5">
+                            <a href="https://forms.gle/7p4eYAsau7jhVbEV6" target="_blank"
+                                class="btn btn-lg btn-primary rounded-pill">👉 Sign up to Beta</a>
+                        </div>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="text-white" href="mailto:contact@dinetab.com"><i
+                                        class="fa-solid fa-envelope me-2"></i>Email</a></li>
+                            <li class="list-inline-item"><a class="text-white" href="https://discord.gg/DQ7qEYhK2P"
+                                    target="_blank"><i class="fa-brands fa-discord me-2"></i>Discord</a></li>
+                            <li class="list-inline-item"><a class="text-white" href="https://t.me/dinetab"
+                                    target="_blank"><i class="fa-brands fa-telegram me-2"></i>Telegram</a></li>
+                            <li class="list-inline-item"><a class="text-white" href="https://twitter.com/dinetab_nft"
+                                    target="_blank"><i class="fa-brands fa-twitter me-2"></i>Twitter</a></li>
+                            <li class="list-inline-item"><a class="text-white"
+                                    href="https://www.instagram.com/dinetab.nft/" target="_blank"><i
+                                        class="fa-brands fa-instagram me-2"></i>Instagram</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="img-cta"></div>
+
+                    <div class="p-4 p-md-5">
+                        <h3>White-paper coming soon!</h3>
+                        <p>We're building local restaurant communities with dineTab. By leveraging the blockchain,
+                            restaurants can reward customers for their loyalty with NFTs, while customers holding the
+                            NFTs can gain exclusive access, rewards and promotions from restaurants.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="p-5">
         <section class="dark">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-md-12 mx-auto">                     
-
-                        <!-- <ul class="list-inline list-unstyled">
-                            <li class="list-inline-item">
-                                <a href="mailto:support@dinetab.com"><i class="far fa-envelope fa-2x"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/dinetab.io/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.instagram.com/dinetab.payments/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/company/dinetab/" target="_blank"><i class="fab fa-linkedin e fa-2x"></i></a>
-                            </li>
-                        </ul> -->
-                        <p class="small mb-0">
-                            © <span id="thisYear"></span> <img src="./img/logomark.svg" alt="" class="mx-1" style="width:16px"/> dineTab. All rights reserved. Made in MTL.
+                    <div class="col-12 mx-auto">
+                        <p class="small mb-0 text-muted">
+                            © <span id="thisYear"></span> <img src="./img/2022/logomark.svg" alt="" class="mx-1"
+                                style="width:16px" /> dineTab. All rights reserved. Made in MTL.
                         </p>
                     </div>
                 </div>
@@ -121,13 +224,18 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js" integrity="sha512-bydaxcpHiWGaIdaqCwrSYIXjj4xRh4P1C3BE+AdJUgYAKAhEWeAt5GzDgeYdLT+MGBYeLPJf7cTz4llPwwdk+A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js"
+        integrity="sha512-bydaxcpHiWGaIdaqCwrSYIXjj4xRh4P1C3BE+AdJUgYAKAhEWeAt5GzDgeYdLT+MGBYeLPJf7cTz4llPwwdk+A=="
+        crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
-    
+
 </body>
 
 </html>
