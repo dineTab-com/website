@@ -106,3 +106,28 @@ h3 {
         background-image: url(../img/2022/3d-city.png);
     }
 }
+
+.img-key {
+    width: 300px;
+    position: relative;
+    animation: image1 4s infinite ease-in-out;
+    max-width: 320px;
+
+    @include media-breakpoint-down(lg) {
+        width: 75%
+    }
+}
+
+@keyframes image1 {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
