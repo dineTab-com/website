@@ -72,6 +72,13 @@ h3 {
 .text-pink {
     color: var(--secondary);
 }
+.border-blue{
+    border-color: var(--primary)!important;
+}
+.border-pink{
+    border-color: var(--secondary)!important;
+}
+
 
 .rounded-24 {
     border-radius: 24px;
