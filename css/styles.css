@@ -78,6 +78,12 @@ h3 {
 .border-pink{
     border-color: var(--secondary)!important;
 }
+.nav-pills .nav-link{
+    color:var(--primary)
+}
+.nav-pills .nav-link.active {
+    background-color:var(--primary);
+}
 
 
 .rounded-24 {
