@@ -1,33 +1,14 @@
-AOS.init();
+//Load navbar and footer
+$(function(){
+    $("#navEn").load("../html/navbar-en.html");
+    $("#navFr").load("../html/navbar-fr.html");
+    $("#footEn").load("../html/footer-en.html");
+    $("#footFr").load("../html/footer-fr.html");
+    $("#navNFT").load("../../html/navbar-nft.html");
+    $("#footNFT").load("../../html/footer-nft.html");
+  });
 
-var animation2 = bodymovin.loadAnimation({
-    container: document.getElementById('bm2'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://dinetab.com/js/foodies.json'
-})
-var animation3 = bodymovin.loadAnimation({
-    container: document.getElementById('bm3'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://dinetab.com/js/restos.json'
-})
-var animation4 = bodymovin.loadAnimation({
-    container: document.getElementById('bm4'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://dinetab.com/js/servers.json'
-})
-var animation5 = bodymovin.loadAnimation({
-    container: document.getElementById('bm5'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://dinetab.com/js/mobile.json'
-})
+AOS.init();
 
 const d = new Date();
 let year = d.getFullYear();
