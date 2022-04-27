@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+:root {
+    --primary: rgb(0, 0, 255);
+    --primary-hover: rgb(24, 24, 185);
+    --secondary: #ff00ff;
+    --grey:#222;
+    --orange:#F89C35;
+    --smooth-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        0 12.5px 10px rgba(0, 0, 0, 0.035),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--primary-hover);
+    border: var(--primary-hover);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border: var(--secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: var(--secondary);
+    border: var(--secondary);
+}
+
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-blue {
+    background-color: var(--primary);
+}
+
+.bg-pink {
+    background-color: var(--secondary);
+}
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.text-blue {
+    color: var(--primary);
+}
+
+.text-pink {
+    color: var(--secondary);
+}
+.border-blue{
+    border-color: var(--primary)!important;
+}
+.border-pink{
+    border-color: var(--secondary)!important;
+}
+.border-orange{
+    border-color: var(--orange)!important;
+}
+.nav-pills .nav-link{
+    color:white;
+    border-radius: 12px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    transition:all .25s ease-in-out;
+}
+.nav-pills .nav-link:hover {
+    background-color:#333;
+}
+.nav-pills .nav-link.active {
+    background-color:var(--primary);
+}
+
+.nav-pills{
+    background-color:var(--grey);
+    border-radius: 12px;
+
+}
+.rounded-24 {
+    border-radius: 24px;
+}
+.rounded-12 {
+    border-radius: 12px;
+}
+
+
+.logomark-signin{
+    width:70px;
+}
+
+.btn-logo{
+    height:20px;
+}
+.logo-header{
+    width: 36px;
+}
+
+small{
+    font-size: .69em;
+}
+
+.modal-dark .modal-content{
+    background-color: black;
+    color:white;
+}
+
+.modal-header{
+    border-bottom: 0;
+}
+
+.modal-footer{
+    border-top:0;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 6px 16px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+label.form-label-app{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.form-control-app{
+    display: block;
+    width: 100%;
+    padding: .375rem 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control-app:focus {
+    color: var(--secondary);
+    background-color: #111;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+    }
+
+@media (max-width:767px) {
+    .animated-logo {
+        margin-bottom: -10px;
+        margin-right: 0;
+    }
+
+    .img-cta {
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: 140%;
+        background-position: center;
+        background-image: url(../img/2022/3d-city.png);
+    }
+}
